@@ -8,9 +8,7 @@ function Brand() {
     return(
         <div class="brand">
             <div >
-                <Button variant="contained" color="success">
-                    Success
-                </Button>
+            <Button variant="contained">Contained</Button>
             </div>
         </div>
 

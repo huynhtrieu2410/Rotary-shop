@@ -51,14 +51,14 @@ body {
     left: 1290px;
     top: 27px;
 
-    border: 1.5px solid #4F5665;
-    border-radius: 20px;
+    /* border: 1.5px solid #4F5665; */
+    /* border-radius: 20px; */
 }
   
 .topnav input[type=text] {
     padding: 2px;
     width: 350px;
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;

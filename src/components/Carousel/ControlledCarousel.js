@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import {Carousel} from 'react-bootstrap';
 
 import Image1 from '../../image/Slider/Image1.png';

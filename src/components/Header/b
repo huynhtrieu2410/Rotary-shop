@@ -1,0 +1,9 @@
+import logo_rotary from '../../image/header/logo.png';
+import cart_icon from '../../image/header/cart.svg';
+import account from '../../image/header/account.svg';
+
+
+    <a class="active" href="#home"><img 
+        src={logo_rotary}
+        alt='logo'
+    /></a>

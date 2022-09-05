@@ -8,9 +8,9 @@ import Brand from './components/Brand/Brand';
 function App() {
   return (
     <div className="App">
-      {/* <Header/> */}
-      <ControlledCarousel/>
-      <Brand/>
+      <Header/>
+      {/* <ControlledCarousel/> */}
+      {/* <Brand/> */}
       
     </div>
   );
