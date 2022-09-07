@@ -19,39 +19,49 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 // import makeStyles from '@material-ui/core'; 
 
 import logo_rotary from '../../image/header/logo.png';
-import { makeStyles } from '@material-ui/core';
+import cart from '../../image/header/cart.png';
+import account from '../../image/header/account.png';
 
-const pages = ['Sản phẩm', 'Giới thiệu', 'Liên hê', 'Ngôn ngữ'];
+import { makeStyles } from '@material-ui/core';
+import { padding } from '@mui/system';
+
+const pages = ['Danh mục sản phẩm', 'Giới thiệu', 'Liên hê', 'Ngôn ngữ'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
-  borderRadius: theme.shape.borderRadius,
+  // borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
+  
   marginRight: theme.spacing(2),
   marginLeft: 0,
   width: '100%',
+  border: '1px solid #4F5665',
+  borderRadius: '15px',
   [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
+    marginLeft: theme.spacing(1),
     width: 'auto',
   },
 }));
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
+  padding: theme.spacing(0, 1.5),
+  // backgroundColor: '#4F5665',
+  color: '#4F5665',
   height: '100%',
   position: 'absolute',
   pointerEvents: 'none',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
+  
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
@@ -63,6 +73,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
+
+const CartIcon = styled('div')(({ theme }) => ({
+  padding: theme.spacing(0, 0),
+  margin: '0px 30px',
+  // padding: '0px 30px'
+}));
+
+const AccountIcon = styled('div')(({ theme }) => ({
+  padding: theme.spacing(0, 1.5),
+}));
+
 
 const useStyles = makeStyles({
   root: {
@@ -101,18 +123,22 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
-            variant="h6"
-            noWrap
-            component="a"
+            // variant="h6"
+            // noWrap
+            // component="a"
             href="/"
             sx={{
               mr: 2,
+              // ml: -20,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              // fontFamily: 'monospace',
+              // fontWeight: 700,
+              // letterSpacing: '.3rem',
+              // color: 'inherit',
+              // color: '#4F5665',
+              // textDecoration: 'none',
+              // marginLeft: '10px'
+              // paddingLeft: '150px'
             }}
           >
             <a class="active" href="#home"><img 
@@ -128,7 +154,8 @@ const ResponsiveAppBar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              // color="inherit"
+              // color: '#4F5665'
             >
               <MenuIcon />
             </IconButton>
@@ -165,13 +192,14 @@ const ResponsiveAppBar = () => {
             href=""
             sx={{
               mr: 2,
+              // ml: -20,
               display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              // flexGrow: 1,
+              // fontFamily: 'monospace',
+              // fontWeight: 700,
+              // letterSpacing: '.3rem',
+              // color: 'inherit',
+              // textDecoration: 'none',
             }}
           >
             <a class="active" href="#home"><img 
@@ -180,12 +208,19 @@ const ResponsiveAppBar = () => {
             /></a>
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                // onClick={handleCloseNavMenu}
+                sx={{ 
+                  // my: 2, 
+                  color: '#4F5665', 
+                  // display: 'block',
+                  fontFamily: 'Open Sans',
+                  fontWeight: '600',
+                  padding: '1.5% 3%'
+                }}
               >
                 {page}
               </Button>
@@ -203,21 +238,33 @@ const ResponsiveAppBar = () => {
             />
           </Search>
 
-          <IconButton
-              size="large"
-              // aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <ShoppingCartOutlinedIcon color="#fff">
-                {/* <NotificationsIcon /> */}
-              </ShoppingCartOutlinedIcon>
-            </IconButton>
+
+          {/* <IconButton> */}
+            <CartIcon>
+                <a class="active" href="#cart"><img 
+                  src={cart}
+                  alt='cart'
+                /></a>
+            </CartIcon>
+          {/* </IconButton>               */}
+          
+
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Temy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
+                {/* <IconButton> */}
+                  <AccountIcon
+                  onClick={handleOpenUserMenu} 
+                  sx={{ p: 0 }}
+                >
+                  <a class="active" href="#account"><img 
+                    src={account}
+                    alt='acccount'
+                  /></a>
+                </AccountIcon>          
+
+              {/* </IconButton> */}
+              
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}

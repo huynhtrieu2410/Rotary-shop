@@ -2,8 +2,6 @@ import React from 'react';
 
 import Button from '@mui/material/Button';
 
-import "./Brand.css"
-
 function Brand() {
     return(
         <div class="brand">
