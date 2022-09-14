@@ -26,8 +26,8 @@ function Brand() {
     
     return(
         <div class="brand">
-            <div >
-            <Button variant="contained">Contained</Button>
+            <div style={{padding: '40px 0px 20px'}}>
+            <Button variant="contained">NHÃN HIỆU</Button>
             </div>
             <UnitBrand/>
         </div>

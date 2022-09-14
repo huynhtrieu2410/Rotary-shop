@@ -18,13 +18,13 @@ import Tomica_logo from '../../image/Brands/Tomica_logo.png';
 const useStyles = makeStyles({
   root: {
     backgroundColor: '#ffffff',
-    padding: '10px',
- 
+    margin: '20px',
+    // padding: '10px',
+    maxHeight: '540px',
+    borderRadius: '20px',
   }
 });
 
-
-// const ResponsiveAppBar = () => {
 
 const UnitBrand = () => {
 
@@ -33,13 +33,14 @@ const UnitBrand = () => {
   return (
     <div>
       <Grid container justifyContent="center" spacing="spacing">
-        <div>
-          <Card sx={{ maxWidth: 430 }}>
-            <CardActionArea className={classes.root}>
+        <div className={classes.root}>
+          <Card style={{height: '540px'}}>
+            <CardActionArea >
               <img
-                className="d-block w-100"
+                // className="d-block w-100"
                 src={Hotwheels_banner}
                 alt="Hotwheels_banner"
+                style={{padding: 15}}
               />
               <CardContent>
                 <Typography>
@@ -53,13 +54,14 @@ const UnitBrand = () => {
           </Card>
         </div>
         
-        <div>
-          <Card sx={{ maxWidth: 430 }}>
-            <CardActionArea className={classes.root}>
+        <div className={classes.root}>
+          <Card  style={{height: '540px'}}>
+            <CardActionArea>
               <img
-                className="d-block w-100"
+                // className="d-block w-100"
                 src={MiniGT_banner}
                 alt="MiniGT_banner"
+                style={{padding: 15}}
               />
               <CardContent>
                 <Typography>
@@ -73,13 +75,14 @@ const UnitBrand = () => {
           </Card>
         </div>
 
-        <div>
-          <Card sx={{ maxWidth: 430 }}>
-            <CardActionArea className={classes.root}>
+        <div className={classes.root}>
+          <Card style={{height: '540px'}}>
+            <CardActionArea >
               <img
-                className="d-block w-100"
+                // className="d-block w-100"
                 src={Tarmac_banner}
                 alt="Tarmac_banner"
+                style={{padding: 15}}
               />
               <CardContent>
                 <Typography>
@@ -93,13 +96,14 @@ const UnitBrand = () => {
           </Card>
         </div>
         
-        <div>
-          <Card sx={{ maxWidth: 430 }}>
-            <CardActionArea className={classes.root}>
+        <div className={classes.root}>
+          <Card style={{height: '540px'}}>
+            <CardActionArea>
               <img
-                className="d-block w-100"
+                // className="d-block w-100"
                 src={Tomica_banner}
                 alt="Tomica_banner"
+                style={{padding: 15}}
               />
               <CardContent>
                 <Typography>
