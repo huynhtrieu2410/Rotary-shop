@@ -118,27 +118,16 @@ const ResponsiveAppBar = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static" className={classes.root}>
+    <AppBar position="static" className={classes.root}
+    // style={[styles.item,{back}]}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
-            // variant="h6"
-            // noWrap
-            // component="a"
             href="/"
             sx={{
               mr: 2,
-              // ml: -20,
               display: { xs: 'none', md: 'flex' },
-              // fontFamily: 'monospace',
-              // fontWeight: 700,
-              // letterSpacing: '.3rem',
-              // color: 'inherit',
-              // color: '#4F5665',
-              // textDecoration: 'none',
-              // marginLeft: '10px'
-              // paddingLeft: '150px'
             }}
           >
             <a class="active" href="#home"><img 
