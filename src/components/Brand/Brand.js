@@ -10,13 +10,8 @@ import { Grid } from '@mui/material';
 
 const useStyles = makeStyles({
     root: {
-      backgroundColor: '#ffffff',
-    //   padding: '10px',
-      display: 'flex-direction: row',
-    //   justify: space
-        // flex-direction: row,
-        justifyContent: 'space-between',
-   
+      backgroundColor: '#F0F0F0',
+    
     }
   });
 
@@ -25,9 +20,9 @@ function Brand() {
     const classes = useStyles();
     
     return(
-        <div class="brand">
+        <div className={classes.root}>
             <div style={{padding: '40px 0px 20px'}}>
-            <Button variant="contained">NHÃN HIỆU</Button>
+                <Button variant="contained">NHÃN HIỆU</Button>
             </div>
             <UnitBrand/>
         </div>

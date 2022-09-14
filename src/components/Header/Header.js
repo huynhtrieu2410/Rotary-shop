@@ -118,169 +118,170 @@ const ResponsiveAppBar = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static" className={classes.root}
-    // style={[styles.item,{back}]}
-    >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-            }}
-          >
-            <a class="active" href="#home"><img 
-              src={logo_rotary}
-              alt='logo'
-          /></a>
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              // color="inherit"
-              // color: '#4F5665'
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+    <div className={classes.root}>
+      <div position="static">
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Typography
+              href="/"
               sx={{
-                display: { xs: 'block', md: 'none' },
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              // ml: -20,
-              display: { xs: 'flex', md: 'none' },
-              // flexGrow: 1,
-              // fontFamily: 'monospace',
-              // fontWeight: 700,
-              // letterSpacing: '.3rem',
-              // color: 'inherit',
-              // textDecoration: 'none',
-            }}
-          >
-            <a class="active" href="#home"><img 
+              <a class="active" href="#home"><img 
                 src={logo_rotary}
                 alt='logo'
             /></a>
-          </Typography>
+            </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                // onClick={handleCloseNavMenu}
-                sx={{ 
-                  // my: 2, 
-                  color: '#4F5665', 
-                  // display: 'block',
-                  fontFamily: 'Open Sans',
-                  fontWeight: '600',
-                  padding: '1.5% 3%'
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                // color="inherit"
+                // color: '#4F5665'
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: 'block', md: 'none' },
                 }}
               >
-                {page}
-              </Button>
-            ))}
-            
-          </Box>
-
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-
-
-          {/* <IconButton> */}
-            <CartIcon>
-                <a class="active" href="#cart"><img 
-                  src={cart}
-                  alt='cart'
-                /></a>
-            </CartIcon>
-          {/* </IconButton>               */}
-          
-
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-                {/* <IconButton> */}
-                  <AccountIcon
-                  onClick={handleOpenUserMenu} 
-                  sx={{ p: 0 }}
-                >
-                  <a class="active" href="#account"><img 
-                    src={account}
-                    alt='acccount'
-                  /></a>
-                </AccountIcon>          
-
-              {/* </IconButton> */}
-              
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                {pages.map((page) => (
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+            {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href=""
+              sx={{
+                mr: 2,
+                // ml: -20,
+                display: { xs: 'flex', md: 'none' },
+                // flexGrow: 1,
+                // fontFamily: 'monospace',
+                // fontWeight: 700,
+                // letterSpacing: '.3rem',
+                // color: 'inherit',
+                // textDecoration: 'none',
               }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
+              <a class="active" href="#home"><img 
+                  src={logo_rotary}
+                  alt='logo'
+              /></a>
+            </Typography>
+
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
+              {pages.map((page) => (
+                <Button
+                  key={page}
+                  // onClick={handleCloseNavMenu}
+                  sx={{ 
+                    // my: 2, 
+                    color: '#4F5665', 
+                    // display: 'block',
+                    fontFamily: 'Open Sans',
+                    fontWeight: '600',
+                    padding: '1.5% 3%'
+                  }}
+                >
+                  {page}
+                </Button>
               ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+              
+            </Box>
+
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
+
+
+            {/* <IconButton> */}
+              <CartIcon>
+                  <a class="active" href="#cart"><img 
+                    src={cart}
+                    alt='cart'
+                  /></a>
+              </CartIcon>
+            {/* </IconButton>               */}
+            
+
+
+            <Box sx={{ flexGrow: 0 }}>
+              <Tooltip title="Open settings">
+                  {/* <IconButton> */}
+                    <AccountIcon
+                    onClick={handleOpenUserMenu} 
+                    sx={{ p: 0 }}
+                  >
+                    <a class="active" href="#account"><img 
+                      src={account}
+                      alt='acccount'
+                    /></a>
+                  </AccountIcon>          
+
+                {/* </IconButton> */}
+                
+              </Tooltip>
+              <Menu
+                sx={{ mt: '45px' }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{setting}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          </Toolbar>
+        </Container>
+      </div>
+    </div>
+    
   );
 };
 export default ResponsiveAppBar;
