@@ -11,6 +11,7 @@ import { Grid } from '@mui/material';
 const useStyles = makeStyles({
     root: {
       backgroundColor: '#F0F0F0',
+      paddingBottom: '20px',
     
     }
   });

@@ -18,9 +18,9 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 // import makeStyles from '@material-ui/core'; 
 
-import logo_rotary from '../../image/header/logo.png';
-import cart from '../../image/header/cart.png';
-import account from '../../image/header/account.png';
+import logo_rotary from '../../../image/header/logo.png';
+import cart from '../../../image/header/cart.png';
+import account from '../../../image/header/account.png';
 
 import { makeStyles } from '@material-ui/core';
 import { padding } from '@mui/system';
@@ -166,7 +166,7 @@ const ResponsiveAppBar = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <MenuItem style={{textTransform: 'none'}} key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
@@ -199,6 +199,7 @@ const ResponsiveAppBar = () => {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
               {pages.map((page) => (
                 <Button
+                  style={{textTransform: 'none'}}
                   key={page}
                   // onClick={handleCloseNavMenu}
                   sx={{ 
@@ -206,7 +207,8 @@ const ResponsiveAppBar = () => {
                     color: '#4F5665', 
                     // display: 'block',
                     fontFamily: 'Open Sans',
-                    fontWeight: '600',
+                    fontWeight: '400',
+                    fontSize:'20px',
                     padding: '1.5% 3%'
                   }}
                 >

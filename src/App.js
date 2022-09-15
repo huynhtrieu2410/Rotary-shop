@@ -1,9 +1,10 @@
 
 import './App.css';
 
-import Header from './components/Header/Header';
-import ControlledCarousel from './components/Carousel/ControlledCarousel';
-import Brand from './components/Brand/Brand';
+import Header from './components/Index/Header/Header';
+import ControlledCarousel from './components/Index/Carousel/ControlledCarousel';
+import Brand from './components/Index/Brand/Brand';
+import TopProducts from './components/TopProducts/TopProducts';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       
       <ControlledCarousel/>
       <Brand/>
+      <TopProducts/>
       
     </div>
   );

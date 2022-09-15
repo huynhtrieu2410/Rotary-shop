@@ -1,9 +1,10 @@
 // import React, { useState } from 'react';
 import {Carousel} from 'react-bootstrap';
 
-import Image1 from '../../image/Slider/Image1.png';
-import Image2 from '../../image/Slider/Image2.png';
-import Image3 from '../../image/Slider/Image3.png';
+import Image1 from '../../../image/Slider/Image1.png';
+import Image2 from '../../../image/Slider/Image2.png';
+import Image3 from '../../../image/Slider/Image3.png';
+
 
 
 const UncontrolledExample = () => {
