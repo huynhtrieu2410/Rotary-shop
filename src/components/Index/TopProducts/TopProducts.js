@@ -8,7 +8,7 @@ import { Container } from '@mui/system';
 import { CenterFocusStrong } from '@material-ui/icons';
 import { Grid } from '@mui/material';
 
-import Hotwheels from '../Products/Hotwheels/Hotwheels';
+import Hotwheels from '../../Products/Hotwheels/Hotwheels';
 
 const useStyles = makeStyles({
     root: {
