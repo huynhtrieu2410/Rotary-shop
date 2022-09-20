@@ -10,7 +10,7 @@ import { makeStyles, ThemeProvider } from '@material-ui/core';
 
 
 
-import Hotw_Mustang from '../../../image/Products/Hotw_Mustang.png';
+import Hotw_Mustang from '../../image/Products/Hotwheels/Hotw_Mustang.png';
 
 import { createTheme } from '@mui/material/styles';
 
@@ -21,7 +21,7 @@ const theme = createTheme({
   palette: {
     red: {
       main: '#F53855',
-      
+       
     },
     orange: {
       main: '#FF7700',

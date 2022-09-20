@@ -10,7 +10,7 @@ import { makeStyles, ThemeProvider } from '@material-ui/core';
 
 
 
-import Hotw_Mustang from '../../image/Products/Hotw_Mustang.png';
+import Mini_Pagani from '../../image/Products/MiniGT/Mini_Pagani.png';
 
 import { createTheme } from '@mui/material/styles';
 
@@ -53,19 +53,19 @@ const UnitBrand = () => {
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Mini_Pagani}
+                    alt="Mini_Pagani"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Mini GT - Pagani Huayra Roadster Rosso Monza - Red
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">259.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -88,19 +88,19 @@ const UnitBrand = () => {
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Mini_Pagani}
+                    alt="Mini_Pagani"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Mini GT - Pagani Huayra Roadster Rosso Monza - Red
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">259.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -123,19 +123,19 @@ const UnitBrand = () => {
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Mini_Pagani}
+                    alt="Mini_Pagani"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Mini GT - Pagani Huayra Roadster Rosso Monza - Red
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">259.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -152,25 +152,25 @@ const UnitBrand = () => {
             </CardActionArea>
           </Card>
         </div>
-
+        
         <div className={classes.root}>
           <Card style={{height: '480px'}}>
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Mini_Pagani}
+                    alt="Mini_Pagani"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Mini GT - Pagani Huayra Roadster Rosso Monza - Red
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">259.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -187,25 +187,25 @@ const UnitBrand = () => {
             </CardActionArea>
           </Card>
         </div>
-
+        
         <div className={classes.root}>
           <Card style={{height: '480px'}}>
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Mini_Pagani}
+                    alt="Mini_Pagani"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Mini GT - Pagani Huayra Roadster Rosso Monza - Red
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">259.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -222,7 +222,8 @@ const UnitBrand = () => {
             </CardActionArea>
           </Card>
         </div>
-
+        
+        
         
       </Grid>
       

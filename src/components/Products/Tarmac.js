@@ -10,7 +10,7 @@ import { makeStyles, ThemeProvider } from '@material-ui/core';
 
 
 
-import Hotw_Mustang from '../../image/Products/Hotw_Mustang.png';
+import Tarm_RX7 from '../../image/Products/Tarmac/Tarm_RX7.png';
 
 import { createTheme } from '@mui/material/styles';
 
@@ -53,19 +53,19 @@ const UnitBrand = () => {
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Tarm_RX7}
+                    alt="Tarm_RX7"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Tarmac Works 1/64 VERTEX RX-7 FD3S Light Green
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">460.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -88,19 +88,19 @@ const UnitBrand = () => {
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Tarm_RX7}
+                    alt="Tarm_RX7"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Tarmac Works 1/64 VERTEX RX-7 FD3S Light Green
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">460.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -123,19 +123,19 @@ const UnitBrand = () => {
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Tarm_RX7}
+                    alt="Tarm_RX7"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Tarmac Works 1/64 VERTEX RX-7 FD3S Light Green
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">460.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -152,25 +152,25 @@ const UnitBrand = () => {
             </CardActionArea>
           </Card>
         </div>
-
+        
         <div className={classes.root}>
           <Card style={{height: '480px'}}>
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Tarm_RX7}
+                    alt="Tarm_RX7"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Tarmac Works 1/64 VERTEX RX-7 FD3S Light Green
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">460.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -187,25 +187,25 @@ const UnitBrand = () => {
             </CardActionArea>
           </Card>
         </div>
-
+        
         <div className={classes.root}>
           <Card style={{height: '480px'}}>
             <CardActionArea >
                 <img
                     // className="d-block w-100"
-                    src={Hotw_Mustang}
-                    alt="Hotw_Mustang"
+                    src={Tarm_RX7}
+                    alt="Tarm_RX7"
                     style={{padding: 15}}
                 />
                 <CardContent>
                     <Typography
                         style={{width: '310px'}}
                     >
-                    Hot Wheels 2021 RLC ’70 Mustang Boss 302
+                    Tarmac Works 1/64 VERTEX RX-7 FD3S Light Green
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme} >
-                    <Button color="error" variant="outlined" size="medium">989.000 VNĐ</Button>
+                    <Button color="error" variant="outlined" size="medium">460.000 VNĐ</Button>
                     <Button 
                         color="warning" 
                         style={{
@@ -222,7 +222,8 @@ const UnitBrand = () => {
             </CardActionArea>
           </Card>
         </div>
-
+        
+        
         
       </Grid>
       

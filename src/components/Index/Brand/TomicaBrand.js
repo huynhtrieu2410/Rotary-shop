@@ -8,29 +8,29 @@ import { Container } from '@mui/system';
 import { CenterFocusStrong } from '@material-ui/icons';
 import { Grid } from '@mui/material';
 
-import Hotwheels from '../../Products/Hotwheels';
+import Tomica from '../../Products/Tomica';
 
 const useStyles = makeStyles({
     root: {
         // marginTop: '20px',
-      backgroundColor: '#FDFCE5',
+      backgroundColor: '#FFFFFF',
     
     }
   });
 
-function TopProducts() {
+function HotwheelsBrand() {
 
     const classes = useStyles();
     
     return(
         <div className={classes.root}>
             <div style={{padding: '40px 0px 20px'}}>
-                <Button variant="contained">TOP SẢN PHẨM NỔI BẬT</Button>
+                <Button variant="contained">TOMICA</Button>
             </div>
-            <Hotwheels/>
+            <Tomica/>
         </div>
 
     )
 }
 
-export default TopProducts;
+export default HotwheelsBrand;

@@ -8,7 +8,7 @@ import { Container } from '@mui/system';
 import { CenterFocusStrong } from '@material-ui/icons';
 import { Grid } from '@mui/material';
 
-import Hotwheels from '../../Products/Hotwheels';
+import Tarmac from '../../Products/Tarmac';
 
 const useStyles = makeStyles({
     root: {
@@ -18,19 +18,19 @@ const useStyles = makeStyles({
     }
   });
 
-function TopProducts() {
+function HotwheelsBrand() {
 
     const classes = useStyles();
     
     return(
         <div className={classes.root}>
             <div style={{padding: '40px 0px 20px'}}>
-                <Button variant="contained">TOP SẢN PHẨM NỔI BẬT</Button>
+                <Button variant="contained">TARMAC</Button>
             </div>
-            <Hotwheels/>
+            <Tarmac/>
         </div>
 
     )
 }
 
-export default TopProducts;
+export default HotwheelsBrand;

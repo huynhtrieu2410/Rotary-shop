@@ -5,7 +5,10 @@ import Header from './components/Index/Header/Header';
 import ControlledCarousel from './components/Index/Carousel/ControlledCarousel';
 import Brand from './components/Index/Brand/Brand';
 import TopProducts from './components/Index/TopProducts/TopProducts';
-import Hotwheels from './components/Products/Hotwheels/Hotwheels';
+import HotwheelsBrand from './components/Index/Brand/HotwheelsBrand';
+import TomicaBrand from './components/Index/Brand/TomicaBrand';
+import MiniGTBrand from './components/Index/Brand/MiniGTBrand';
+import TarmacBrand from './components/Index/Brand/TarmacBrand';
 
 function App() {
   return (
@@ -14,7 +17,11 @@ function App() {
       <ControlledCarousel/>
       <Brand/>
       <TopProducts/>
-      <Hotwheels/>
+      <HotwheelsBrand/>
+      <TomicaBrand/>
+      <MiniGTBrand/>
+      <TarmacBrand/>
+      
     </div>
   );
 }
