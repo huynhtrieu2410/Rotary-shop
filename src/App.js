@@ -5,23 +5,27 @@ import Header from './components/Index/Header/Header';
 import ControlledCarousel from './components/Index/Carousel/ControlledCarousel';
 import Brand from './components/Index/Brand/Brand';
 import TopProducts from './components/Index/TopProducts/TopProducts';
-import HotwheelsBrand from './components/Index/Brand/HotwheelsBrand';
-import TomicaBrand from './components/Index/Brand/TomicaBrand';
-import MiniGTBrand from './components/Index/Brand/MiniGTBrand';
-import TarmacBrand from './components/Index/Brand/TarmacBrand';
+import HotwheelsBr from './components/Index/Brand/HotwheelsBr';
+import TomicaBr from './components/Index/Brand/TomicaBr';
+import MiniGTBr from './components/Index/Brand/MiniGTBr';
+import TarmacBr from './components/Index/Brand/TarmacBr';
+
+import HotwheelsBrand from './components/Brands/Hotwheels/HotwheelsBrands';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/>
       <ControlledCarousel/>
       <Brand/>
       <TopProducts/>
+      <HotwheelsBr/>
+      <TomicaBr/>
+      <MiniGTBr/>
+      <TarmacBr/> */}
+
       <HotwheelsBrand/>
-      <TomicaBrand/>
-      <MiniGTBrand/>
-      <TarmacBrand/>
-      
+
     </div>
   );
 }

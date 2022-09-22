@@ -6,14 +6,14 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea, Grid } from '@mui/material';
 import { makeStyles } from '@material-ui/core';
 
-import Hotwheels_banner from '../../../image/Brands/Hotwheels_banner.png';
-import Hotwheels_logo from '../../../image/Brands/Hotwheels_logo.png';
-import MiniGT_banner from '../../../image/Brands/MiniGT_banner.png';
-import MiniGT_logo from '../../../image/Brands/MiniGT_logo.png';
-import Tarmac_banner from '../../../image/Brands/Tarmac_banner.png';
-import Tarmac_logo from '../../../image/Brands/Tarmac_logo.png';
-import Tomica_banner from '../../../image/Brands/Tomica_banner.png';
-import Tomica_logo from '../../../image/Brands/Tomica_logo.png';
+import Hotwheels_banner from '../../../image/Brands/Hotwheels/Hotwheels_banner.png';
+import Hotwheels_logo from '../../../image/Brands/Hotwheels/Hotwheels_logo.png';
+import MiniGT_banner from '../../../image/Brands/MiniGT/MiniGT_banner.png';
+import MiniGT_logo from '../../../image/Brands/MiniGT/MiniGT_logo.png';
+import Tarmac_banner from '../../../image/Brands/Tarmac/Tarmac_banner.png';
+import Tarmac_logo from '../../../image/Brands/Tarmac/Tarmac_logo.png';
+import Tomica_banner from '../../../image/Brands/Tomica/Tomica_banner.png';
+import Tomica_logo from '../../../image/Brands/Tomica/Tomica_logo.png';
 
 const useStyles = makeStyles({
   root: {
