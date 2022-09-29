@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import logo_rotary from '../../../image/header/logo.png';
 
 export default function App() {
   return (
@@ -12,10 +13,11 @@ export default function App() {
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
-                HTPerformane
-              </h6>
+              <a class="active" href="#home"><img 
+                  src={logo_rotary}
+                  alt='logo'
+              /></a>
+              
               <p>
                 HTPerformance là một trang web chuyên cung cấp xe mô hình tỉ lệ 1:64
               </p>
@@ -85,15 +87,15 @@ export default function App() {
             <MDBCol md="4" lg="3" xl="2" className='mx-auto mb-md-0 mb-4'>
               <h6 className='fs-5 fw-bold mb-4'>Theo dõi chúng tôi</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
+                <MDBIcon  className="me-2" />
                 Facebook
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-3" />
+                <MDBIcon  className="me-2" />
                 Twitter
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" />
+                <MDBIcon  className="me-2" />
                 Instagram
               </p>
               

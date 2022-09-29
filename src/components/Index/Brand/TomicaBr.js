@@ -13,7 +13,7 @@ import Tomica from '../../Products/Tomica';
 const useStyles = makeStyles({
     root: {
         // marginTop: '20px',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: '#F0F0F0',
     
     }
   });

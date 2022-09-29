@@ -13,7 +13,7 @@ import Hotwheels from '../../Products/Hotwheels';
 const useStyles = makeStyles({
     root: {
         // marginTop: '20px',
-      backgroundColor: '#FDFCE5',
+      backgroundColor: '#F8F8F8',
     
     }
   });

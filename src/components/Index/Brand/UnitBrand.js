@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Grid } from '@mui/material';
 import { makeStyles } from '@material-ui/core';
+import Link from '../../../Link';
 
 import Hotwheels_banner from '../../../image/Brands/Hotwheels/Hotwheels_banner.png';
 import Hotwheels_logo from '../../../image/Brands/Hotwheels/Hotwheels_logo.png';
@@ -96,26 +97,30 @@ const UnitBrand = () => {
           </Card>
         </div>
         
-        <div className={classes.root}>
-          <Card style={{height: '560px'}}>
-            <CardActionArea>
-              <img
-                // className="d-block w-100"
-                src={Tomica_banner}
-                alt="Tomica_banner"
-                style={{padding: 15}}
-              />
-              <CardContent>
-                <Typography>
-                  <a class="active" href="#hotwheels"><img 
-                    src={Tomica_logo}
-                    alt='Tomica_logo'
-                /></a>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </div>
+        <Link href="/hotwheels" className="item">
+          <div className={classes.root}>
+            <Card style={{height: '560px'}}>
+              <CardActionArea>
+                <img
+                  // className="d-block w-100"
+                  src={Tomica_banner}
+                  alt="Tomica_banner"
+                  style={{padding: 15}}
+                />
+                <CardContent>
+                  <Typography>
+                    <a class="active" href="#hotwheels"><img 
+                      src={Tomica_logo}
+                      alt='Tomica_logo'
+                  /></a>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+        </Link>
+
+        
 
       </Grid>
       
